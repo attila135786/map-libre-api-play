@@ -1,0 +1,7 @@
+frontend:
+  build: "./frontend"
+  # image: "user-attila/frontend-image"
+  ports:
+    - "5173:5173"
+  depends_on:
+    - backend
