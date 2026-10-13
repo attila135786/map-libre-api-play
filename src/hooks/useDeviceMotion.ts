@@ -36,11 +36,11 @@ type DeviceOrientationEventWithPermission = typeof DeviceOrientationEvent & {
   requestPermission?: () => Promise<"granted" | "denied">;
 };
 
-const emptyVector = (): Vector3 => ({
-  x: null,
-  y: null,
-  z: null
-});
+// const emptyVector = (): Vector3 => ({
+//   x: null,
+//   y: null,
+//   z: null
+// });
 
 export function useDeviceMotion() {
   const [status, setStatus] = useState<SensorStatus>("idle");
